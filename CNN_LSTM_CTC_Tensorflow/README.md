@@ -4,22 +4,15 @@ CNN+LSTM+CTC based OCR(Optical Character Recognition) implemented using tensorfl
 
 **Note:** there is **No** restriction on the number of characters in the image (variable length). Have a look at the image bellow.
 
-I trained a model with 100k images using this code and got 99.75% accuracy on test dataset (200k images) in the [competition](http://meizu.baiducloud.top). The images in both dataset:
-
-![](https://github.com/watsonyanghx/CNN_LSTM_CTC_Tensorflow/blob/master/data/ico1-608634b7cb.png)
-
-![](https://github.com/watsonyanghx/CNN_LSTM_CTC_Tensorflow/blob/master/data/ico2-19c9d50d82.png)
+I trained a model with 100k images using this code and got 99.75% accuracy on test dataset (200k images). 
 
 
-**Update 2017.11.6**:
 
-The competiton page is not available now, if you want to reproduce this result, please see this [issue](https://github.com/watsonyanghx/CNN_LSTM_CTC_Tensorflow/issues/2) about dataset， the lable file (a .txt file) is in the same folder with images after extracting .tar.gz file.
+Training dataset[http://baidudeeplearning.bj.bcebos.com/image_contest_level_1.tar.gz]
 
+Testing dataset[http://baidudeeplearning.bj.bcebos.com/image_contest_level_1_validate.tar.gz]
 
-**Update 2018.4.24**:
-
-Update to tensorflow 1.7 and fix some bugs reported at issue [#8](https://github.com/watsonyanghx/CNN_LSTM_CTC_Tensorflow/issues/8).
-
+the lable file (labels.txt file) is in the same folder with images after extracting .tar.gz file.
 
 ## Structure
 
@@ -32,9 +25,9 @@ You can play with the network architecture (add dropout to CNN, stacked layers o
 
 ## Prerequisite
 
-1. Python 3.6.4
+1. Python 3.X
 
-2. TensorFlow 1.2
+2. TensorFlow 1.2+
 
 3. Opencv3 (Not a must, used to [read images](https://github.com/watsonyanghx/CNN_LSTM_CTC_Tensorflow/blob/master/utils.py#L72)).
 
